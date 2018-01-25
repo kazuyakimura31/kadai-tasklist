@@ -47,7 +47,7 @@ class TasksController extends Controller
      */
     public function store(Request $request)
     {
-        $task = new task;
+        $task = new Task;
         $task->content = $request->content;
         $task->save();
 
